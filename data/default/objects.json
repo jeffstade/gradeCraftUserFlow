@@ -1,0 +1,222 @@
+[
+    {
+        "type"    : "homepage",
+        "name"    : "Homepage",
+        "depends" : []
+    },
+    {
+        "type"    : "homepage",
+        "name"    : "Dashboard",
+        "depends" : ["Homepage"] 
+    },
+    {
+        "type"    : "homepage",
+        "name"    : "My Account",
+        "depends" : [
+        	"Dashboard"
+        ]
+    },
+    {
+        "type"    : "assignments",
+        "name"    : "Assignments",
+        "depends" : [
+        	"Dashboard"
+        ]
+    },
+	    {
+	        "type"    : "assignments",
+	        "group"	  : "singleAssigmentView",
+	        "name"    : "Assignments_DescriptionTab",
+	        "depends" : [
+	        	"Assignments",
+	        	"Assignments_ResultsTab",
+	        	"Assignments_AnalyticsTab"
+	        ]
+	    },
+	    {
+	        "type"    : "assignments",
+	        "group"	  : "singleAssigmentView",
+	        "name"    : "Assignments_ResultsTab",
+	        "depends" : [
+	        	"Assignments",
+	        	"Assignments_DescriptionTab",
+	        	"Assignments_AnalyticsTab"
+	        ]
+	    },
+	    {
+	        "type"    : "assignments",
+	        "group"	  : "singleAssigmentView",
+	        "name"    : "Assignments_AnalyticsTab",
+	        "depends" : [
+	        	"Assignments_ResultsTab",
+	        	"Assignments_DescriptionTab"
+	        ]
+
+	    },
+    {
+        "type"    : "progress",
+        "name"    : "CourseProgress",
+        "depends" : [
+        	"Dashboard"
+        ]
+    },
+    {
+        "type"    : "predictor",
+        "name"    : "Grade Predictor",
+        "depends" : [
+        	"Dashboard"
+        ]
+    },
+    {
+        "type"    : "badges",
+        "name"    : "Badges",
+        "depends" : [
+        	"Dashboard"
+        ]
+    },
+    {
+        "type"    : "teams",
+        "name"    : "Teams_LeaderboardTab",
+        "depends" : [
+        	"Dashboard"
+        ]
+    },
+    {
+        "type"    : "teams",
+        "name"    : "Teams_ChallengesTab",
+        "depends" : [
+        	"Teams_LeaderboardTab"
+        ]
+    },
+    {
+        "type"    : "static",
+        "name"    : "Explore",
+        "depends" : [
+        ]
+    },
+    	{
+	        "type"    : "static",
+	        "name"    : "Features",
+	        "group"	  : "staticSub",
+	        "depends" : [
+	        	"Explore"
+	        ]
+		},
+    {
+        "type"    : "static",
+        "name"    : "Using GradeCraft",
+        "depends" : [
+        ]
+    },
+    	{
+	        "type"    : "static",
+	        "group"	  : "staticSub",
+	        "name"    : "Apply to Use",
+	        "depends" : [
+	        	"Using GradeCraft"
+	        ]
+		},
+    	{
+	        "type"    : "static",
+	        "group"	  : "staticSub",
+	        "name"    : "Documentation",
+	        "depends" : [
+	        	"Using GradeCraft"
+	        ]
+		},
+    	{
+	        "type"    : "static",
+	        "group"	  : "staticSub",
+	        "name"    : "Video Tutorials",
+	        "depends" : [
+	        	"Using GradeCraft"
+	        ]
+		},
+    	{
+	        "type"    : "static",
+	        "group"	  : "staticSub",
+	        "name"    : "Submit a Bug",
+	        "depends" : [
+	        	"Using GradeCraft"
+	        ]
+		},
+
+    {
+        "type"    : "static",
+        "name"    : "About",
+        "depends" : [
+        ]
+    },
+    	{
+	        "type"    : "static",
+	        "group"	  : "staticSub",
+	        "name"    : "Research",
+	        "depends" : [
+	        	"About"
+	        ]
+		},
+		{
+	        "type"    : "static",
+	        "group"	  : "staticSub",
+	        "name"    : "People",
+	        "depends" : [
+	        	"About"
+	        ]
+		},	
+		    	{
+	        "type"    : "static",
+	        "group"	  : "staticSub",
+	        "name"    : "Codebase",
+	        "depends" : [
+	        	"About"
+	        ]
+		},
+		    	{
+	        "type"    : "static",
+	        "group"	  : "staticSub",
+	        "name"    : "Blog",
+	        "depends" : [
+	        	"About"
+	        ]
+		},
+
+    {
+        "type"    : "static",
+        "name"    : "Talk To Us",
+        "depends" : [
+        ]
+    },
+    	{
+	        "type"    : "static",
+	        "group"	  : "staticSub",
+	        "name"    : "Help",
+	        "depends" : [
+	        	"Talk To Us"
+	        ]
+		},
+		{
+	        "type"    : "static",
+	        "group"	  : "staticSub",
+	        "name"    : "Email",
+	        "depends" : [
+	        	"Talk To Us"
+	        ]
+		},	
+		    	{
+	        "type"    : "static",
+	        "group"	  : "staticSub",
+	        "name"    : "Twitter",
+	        "depends" : [
+	        	"Talk To Us"
+	        ]
+		},
+		    	{
+	        "type"    : "static",
+	        "group"	  : "staticSub",
+	        "name"    : "Facebook",
+	        "depends" : [
+	        	"Talk To Us"
+	        ]
+		}
+
+]
