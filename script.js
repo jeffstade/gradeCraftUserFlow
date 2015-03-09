@@ -36,7 +36,7 @@ $(function() {
     /* On scroll, logo fades */
     $("#graph-container").scroll( function(){
         var scrollTop = $("#graph-container").scrollTop();
-        if(scrollTop < 50){
+        if(scrollTop < 100){
             $("img.logo").fadeIn();
         }
         else {
